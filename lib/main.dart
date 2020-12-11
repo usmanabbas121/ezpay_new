@@ -2,6 +2,8 @@ import 'package:ezpay/router.dart';
 import 'package:ezpay/starting_screens/gett_started.dart';
 import 'package:flutter/material.dart';
 
+import 'dashboard/dashboard.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
-      home: Getting_Started(),
+      home: Dashboard(),
       onGenerateRoute: generateRoute,
 
     );
