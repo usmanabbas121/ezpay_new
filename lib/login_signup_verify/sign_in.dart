@@ -198,7 +198,9 @@ class _SignupState extends State<Sign_In> {
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(10.0),
                                       side: BorderSide(color: Theme.of(context).primaryColor)),
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.pushNamed(context, "dashboard");
+                                  },
                                   color: Theme.of(context).primaryColor,
                                   textColor: Colors.white,
                                   child: Text(
