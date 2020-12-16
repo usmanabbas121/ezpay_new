@@ -560,23 +560,4 @@ class _Send_MoneyState extends State<Spendings> {
     );
   }
 
-  Widget buttons(String amount){
-    return  Padding(
-      padding: const EdgeInsets.all(5.0),
-      child: Container(
-          height: 60,
-          decoration: BoxDecoration(
-            color: Theme.of(context).primaryColor.withOpacity(.15),
-            borderRadius: BorderRadius.all(Radius.circular(10)),
-          ),
-          child: Center(
-            child: Text("€ "+amount,style:TextStyle(
-                fontSize: 15.0,
-                fontFamily: "Proxmia",
-                color: Theme.of(context).primaryColor,
-                fontWeight: FontWeight.bold)),
-          )
-      ),
-    );
-  }
 }

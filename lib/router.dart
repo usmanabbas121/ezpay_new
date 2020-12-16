@@ -1,10 +1,15 @@
 import 'package:ezpay/dashboard/dashboard.dart';
-import 'package:ezpay/dashboard/sign_in.dart';
+import 'package:ezpay/dashboard/send_money.dart';
 import 'package:ezpay/dashboard/spendings.dart';
+import 'package:ezpay/dashboard/wallet.dart';
 import 'package:ezpay/login_signup_verify/sign_in.dart';
 import 'package:ezpay/login_signup_verify/signup.dart';
 import 'package:ezpay/starting_screens/gett_started.dart';
 import 'package:flutter/material.dart';
+
+import 'dashboard/add_card.dart';
+import 'dashboard/contact_list.dart';
+import 'dashboard/to_company.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   var signuparg=settings.arguments;
@@ -21,5 +26,13 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => Send_Money());
     case 'spendings':
       return MaterialPageRoute(builder: (context) => Spendings());
+    case 'wallet':
+      return MaterialPageRoute(builder: (context) => Wallet());
+      case 'add_card':
+      return MaterialPageRoute(builder: (context) => Creditcard());
+      case 'tocontact':
+      return MaterialPageRoute(builder: (context) => Contactlist());
+      case 'tocompany':
+      return MaterialPageRoute(builder: (context) => CompanyList());
   }
 }
