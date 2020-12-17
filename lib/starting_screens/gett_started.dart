@@ -1,18 +1,26 @@
-import 'package:ezpay/login_signup_verify/signup.dart';
+import 'package:ezpay/login_signup_verify/sign_in.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-class Getting_Started extends StatefulWidget {
+import 'package:shared_preferences/shared_preferences.dart';
+
+class GettingStarted extends StatefulWidget {
   @override
   _OnBoardingPageState createState() => _OnBoardingPageState();
 }
 
-class _OnBoardingPageState extends State<Getting_Started> {
+class _OnBoardingPageState extends State<GettingStarted> {
   final introKey = GlobalKey<IntroductionScreenState>();
 
+  Future<Null> saveLocalData() async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    prefs.setBool('isFirstTime', false);
+  }
+
   void _onIntroEnd(context) {
-    Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => Signup()),
+    saveLocalData();
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(builder: (_) => SignIn()),
     );
   }
 

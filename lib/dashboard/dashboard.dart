@@ -54,13 +54,13 @@ class _DashboardState extends State<Dashboard> {
                   icon: Icon(CupertinoIcons.square_list),
                   label: 'Business',
                 ),
-                BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.money_euro_circle),
-                  label: 'School',
+                  BottomNavigationBarItem(
+                    icon: Icon(CupertinoIcons.money_pound_circle),
+                    label: 'Wallet',
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.person),
-                  label: 'School',
+                    icon: Icon(CupertinoIcons.person),
+                    label: 'Profile',
                 ),
               ],
               currentIndex: _selectedIndex,

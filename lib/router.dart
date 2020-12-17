@@ -15,9 +15,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
   var signuparg=settings.arguments;
   switch (settings.name) {
     case 'gettingstarted':
-      return MaterialPageRoute(builder: (context) => Getting_Started());
+      return MaterialPageRoute(builder: (context) => GettingStarted());
     case 'signin':
-      return MaterialPageRoute(builder: (context) => Sign_In());
+      return MaterialPageRoute(builder: (context) => SignIn());
     case 'signup':
       return MaterialPageRoute(builder: (context) => Signup());
     case 'dashboard':
@@ -28,11 +28,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => Spendings());
     case 'wallet':
       return MaterialPageRoute(builder: (context) => Wallet());
-      case 'add_card':
+    case 'add_card':
       return MaterialPageRoute(builder: (context) => Creditcard());
-      case 'tocontact':
+    case 'tocontact':
       return MaterialPageRoute(builder: (context) => Contactlist());
-      case 'tocompany':
+    case 'tocompany':
       return MaterialPageRoute(builder: (context) => CompanyList());
   }
 }

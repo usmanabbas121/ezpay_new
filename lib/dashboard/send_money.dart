@@ -9,7 +9,7 @@ class _Send_MoneyState extends State<Send_Money> {
   TextEditingController currency=new TextEditingController();
   @override
   void initState() {
-    currency.text="123332";
+    currency.text="100";
     // TODO: implement initState
     super.initState();
   }
@@ -81,7 +81,7 @@ class _Send_MoneyState extends State<Send_Money> {
                                 maxLines: 1,
                                 decoration: InputDecoration(
                                   prefixIcon: const Icon(
-                                    Icons.euro,
+                                    CupertinoIcons.money_pound,
                                     color: Color(0xFF233067),
                                   ),
                                   border: OutlineInputBorder(
