@@ -89,7 +89,7 @@ class _Send_MoneyState extends State<Spendings> {
                         children: [
 
                           Text(
-                            '€ -50.00',
+                            '£ -50.00',
                             style: TextStyle(
                                 fontSize: 15.0,
                                 fontFamily: "Gilroy",
@@ -97,7 +97,7 @@ class _Send_MoneyState extends State<Spendings> {
                                 fontWeight: FontWeight.w400),
                           ),
                           Text(
-                            '€ 5497',
+                            '£ 5497',
                             style: TextStyle(
                                 fontSize: 13.0,
                                 fontFamily: "Proxmia",
@@ -152,7 +152,7 @@ class _Send_MoneyState extends State<Spendings> {
                         children: [
 
                           Text(
-                            '€ -50.00',
+                            '£ -50.00',
                             style: TextStyle(
                                 fontSize: 15.0,
                                 fontFamily: "Gilroy",
@@ -160,7 +160,7 @@ class _Send_MoneyState extends State<Spendings> {
                                 fontWeight: FontWeight.w400),
                           ),
                           Text(
-                            '€ 5497',
+                            '£ 5497',
                             style: TextStyle(
                                 fontSize: 13.0,
                                 fontFamily: "Proxmia",
@@ -215,7 +215,7 @@ class _Send_MoneyState extends State<Spendings> {
                         children: [
 
                           Text(
-                            '€ -50.00',
+                            '£ -50.00',
                             style: TextStyle(
                                 fontSize: 15.0,
                                 fontFamily: "Gilroy",
@@ -223,7 +223,7 @@ class _Send_MoneyState extends State<Spendings> {
                                 fontWeight: FontWeight.w400),
                           ),
                           Text(
-                            '€ 5497',
+                            '£ 5497',
                             style: TextStyle(
                                 fontSize: 13.0,
                                 fontFamily: "Proxmia",
@@ -278,7 +278,7 @@ class _Send_MoneyState extends State<Spendings> {
                         children: [
 
                           Text(
-                            '€ -50.00',
+                            '£ -50.00',
                             style: TextStyle(
                                 fontSize: 15.0,
                                 fontFamily: "Gilroy",
@@ -286,7 +286,7 @@ class _Send_MoneyState extends State<Spendings> {
                                 fontWeight: FontWeight.w400),
                           ),
                           Text(
-                            '€ 5497',
+                            '£ 5497',
                             style: TextStyle(
                                 fontSize: 13.0,
                                 fontFamily: "Proxmia",
@@ -341,7 +341,7 @@ class _Send_MoneyState extends State<Spendings> {
                         children: [
 
                           Text(
-                            '€ -50.00',
+                            '£ -50.00',
                             style: TextStyle(
                                 fontSize: 15.0,
                                 fontFamily: "Gilroy",
@@ -349,7 +349,7 @@ class _Send_MoneyState extends State<Spendings> {
                                 fontWeight: FontWeight.w400),
                           ),
                           Text(
-                            '€ 5497',
+                            '£ 5497',
                             style: TextStyle(
                                 fontSize: 13.0,
                                 fontFamily: "Proxmia",
@@ -404,7 +404,7 @@ class _Send_MoneyState extends State<Spendings> {
                         children: [
 
                           Text(
-                            '€ -50.00',
+                            '£ -50.00',
                             style: TextStyle(
                                 fontSize: 15.0,
                                 fontFamily: "Gilroy",
@@ -412,7 +412,7 @@ class _Send_MoneyState extends State<Spendings> {
                                 fontWeight: FontWeight.w400),
                           ),
                           Text(
-                            '€ 5497',
+                            '£ 5497',
                             style: TextStyle(
                                 fontSize: 13.0,
                                 fontFamily: "Proxmia",
@@ -467,7 +467,7 @@ class _Send_MoneyState extends State<Spendings> {
                         children: [
 
                           Text(
-                            '€ -50.00',
+                            '£ -50.00',
                             style: TextStyle(
                                 fontSize: 15.0,
                                 fontFamily: "Gilroy",
@@ -475,7 +475,7 @@ class _Send_MoneyState extends State<Spendings> {
                                 fontWeight: FontWeight.w400),
                           ),
                           Text(
-                            '€ 5497',
+                            '£ 5497',
                             style: TextStyle(
                                 fontSize: 13.0,
                                 fontFamily: "Proxmia",
@@ -530,7 +530,7 @@ class _Send_MoneyState extends State<Spendings> {
                         children: [
 
                           Text(
-                            '€ -50.00',
+                            '£ -50.00',
                             style: TextStyle(
                                 fontSize: 15.0,
                                 fontFamily: "Gilroy",
@@ -538,7 +538,7 @@ class _Send_MoneyState extends State<Spendings> {
                                 fontWeight: FontWeight.w400),
                           ),
                           Text(
-                            '€ 5497',
+                            '£ 5497',
                             style: TextStyle(
                                 fontSize: 13.0,
                                 fontFamily: "Proxmia",

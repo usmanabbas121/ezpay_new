@@ -21,7 +21,7 @@ class _ContactlistState extends State<Contactlist> {
       body:  Container(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.only(top: 40,left: 30,right: 30),
+            padding: const EdgeInsets.only(top: 10,left: 30,right: 30),
 
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -98,7 +98,54 @@ class _ContactlistState extends State<Contactlist> {
                       fontStyle: FontStyle.normal,
                       fontSize: 18.0, fontWeight: FontWeight.w700),),
                 ),
-
+                Padding(
+                  padding: const EdgeInsets.only(top: 05,left: 10,right: 10),
+                  child: TextFormField(
+                    style: TextStyle(
+                        fontSize: 15.0,
+                        fontFamily: "Proxmia",
+                        color: Theme.of(context)
+                            .primaryColor
+                            .withOpacity(.9),
+                        fontWeight: FontWeight.bold),
+                    decoration: InputDecoration(
+                        alignLabelWithHint: true,
+                        isDense: true,
+                        prefixIconConstraints:
+                        BoxConstraints(minHeight: 15),
+                        prefixIcon: Padding(
+                          padding: const EdgeInsets.only(
+                              right: 10, bottom: 05, top: 03),
+                          child: Container(
+                              height: 20,
+                              width: 20,
+                              child: SvgPicture.asset("assets/search.svg",color: Theme.of(context).primaryColor,)),
+                        ),
+                        floatingLabelBehavior:
+                        FloatingLabelBehavior.always,
+                        hintText: "Search",
+                        hintStyle: TextStyle(
+                            fontSize: 15.0,
+                            fontFamily: "Proxmia",
+                            color: Theme.of(context)
+                                .primaryColor
+                                .withOpacity(.5),
+                            fontWeight: FontWeight.w100),
+                        enabledBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(
+                              color: Theme.of(context)
+                                  .primaryColor
+                                  .withOpacity(.2),width: 0.3),
+                        ),
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Theme.of(context)
+                                .primaryColor
+                                .withOpacity(.5),
+                          ),
+                        )),
+                  ),
+                ),
                 SizedBox(height: 20,),
                 contactitem(),
                 contactitem(),contactitem(),

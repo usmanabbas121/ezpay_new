@@ -263,7 +263,7 @@ class _Send_MoneyState extends State<Send_Money> {
                                         fontWeight: FontWeight.w400),
                                   ),
                                   Text(
-                                    '€ -50.00',
+                                    '£ -50.00',
                                     style: TextStyle(
                                         fontSize: 12.0,
                                         fontFamily: "Gilroy",
@@ -324,7 +324,7 @@ class _Send_MoneyState extends State<Send_Money> {
                                           fontWeight: FontWeight.w400),
                                     ),
                                     Text(
-                                      '€ -70.00',
+                                      '£ -70.00',
                                       style: TextStyle(
                                           fontSize: 12.0,
                                           fontFamily: "Gilroy",
@@ -379,7 +379,7 @@ class _Send_MoneyState extends State<Send_Money> {
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
           child: Center(
-            child: Text("€ "+amount,style:TextStyle(
+            child: Text("£ "+amount,style:TextStyle(
                 fontSize: 15.0,
                 fontFamily: "Proxmia",
                 color: Theme.of(context).primaryColor,

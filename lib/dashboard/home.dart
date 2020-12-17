@@ -73,7 +73,7 @@ class _HomeState extends State<Home> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   AutoSizeText(
-                                    '€ 498.99',
+                                    '£ 498.99',
                                     style: TextStyle(
                                         fontSize: 30.0,
                                         fontFamily: "Gilroy",
@@ -114,7 +114,7 @@ class _HomeState extends State<Home> {
                                     ],
                                   ),
                                   AutoSizeText(
-                                    '€ 738.99',
+                                    '£ 738.99',
                                     style: TextStyle(
                                         fontSize: 18.0,
                                         fontFamily: "Gilroy",
@@ -146,7 +146,7 @@ class _HomeState extends State<Home> {
                                     ],
                                   ),
                                   AutoSizeText(
-                                    '€ 56988.99',
+                                    '£ 56988.99',
                                     style: TextStyle(
                                         fontSize: 18.0,
                                         fontFamily: "Gilroy",
@@ -499,7 +499,7 @@ class _HomeState extends State<Home> {
                                 children: [
 
                                   Text(
-                                    '€ -50.00',
+                                    '£ -50.00',
                                     style: TextStyle(
                                         fontSize: 15.0,
                                         fontFamily: "Gilroy",
@@ -507,7 +507,7 @@ class _HomeState extends State<Home> {
                                         fontWeight: FontWeight.w400),
                                   ),
                                   Text(
-                                    '€ 5497',
+                                    '£ 5497',
                                     style: TextStyle(
                                         fontSize: 13.0,
                                         fontFamily: "Proxmia",
