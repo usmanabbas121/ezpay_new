@@ -36,6 +36,10 @@ dependencies:
   carousel_slider: ^2.3.1
   credit_card_field: ^1.0.2
   shared_preferences: ^0.5.12
+  qrscan: ^0.2.21
+  barcode_scan: ^3.0.1
+  dotted_border: ^1.0.7
+
 
 
 dev_dependencies:

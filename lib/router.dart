@@ -12,7 +12,9 @@ import 'dashboard/contact_list.dart';
 import 'dashboard/to_company.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
-  var signuparg=settings.arguments;
+  var currency=settings.arguments;
+  var company_curr=settings.arguments;
+
   switch (settings.name) {
     case 'gettingstarted':
       return MaterialPageRoute(builder: (context) => GettingStarted());
@@ -31,8 +33,8 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case 'add_card':
       return MaterialPageRoute(builder: (context) => Creditcard());
     case 'tocontact':
-      return MaterialPageRoute(builder: (context) => Contactlist());
+      return MaterialPageRoute(builder: (context) => Contactlist(currency));
     case 'tocompany':
-      return MaterialPageRoute(builder: (context) => CompanyList());
+      return MaterialPageRoute(builder: (context) => CompanyList(company_curr));
   }
 }
