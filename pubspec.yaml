@@ -39,6 +39,8 @@ dependencies:
   qrscan: ^0.2.21
   barcode_scan: ^3.0.1
   dotted_border: ^1.0.7
+  path_provider: ^1.6.24
+
 
 
 
@@ -60,6 +62,9 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
    - assets/
+   - assets/contact_list.json
+   - assets/company_list.json
+   - assets/spending.json
   fonts:
    - family: Gilroy
      fonts:

@@ -1,10 +1,14 @@
 import 'package:barcode_scan/platform_wrapper.dart';
 import 'package:dotted_border/dotted_border.dart';
+import 'package:ezpay/dashboard/contact_list.dart';
+import 'package:ezpay/model_classes/contact_list_json.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:qrscan/qrscan.dart' as scanner;
 import 'package:qrscan/qrscan.dart';
+
+import '../net_calls.dart';
 
 class Send_Money extends StatefulWidget {
   @override
@@ -13,6 +17,7 @@ class Send_Money extends StatefulWidget {
 
 class _Send_MoneyState extends State<Send_Money> {
   TextEditingController currency=new TextEditingController();
+  Json_Datafetch obj=new Json_Datafetch();
   @override
   void initState() {
     currency.text="100";

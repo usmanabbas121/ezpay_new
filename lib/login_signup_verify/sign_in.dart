@@ -1,3 +1,4 @@
+import 'package:ezpay/net_calls.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -10,7 +11,7 @@ class SignIn extends StatefulWidget {
 class _SignInState extends State<SignIn> {
 
   final _formKey = GlobalKey<FormState>();
-
+  Json_Datafetch obj=new Json_Datafetch();
   Future<Null> saveLocalData() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setBool('isSignedIn', true);
@@ -213,6 +214,7 @@ class _SignInState extends State<SignIn> {
                                     if (form.validate()) {
                                       print('Sign-In success');
                                       form.save();
+                                      obj.filecreators();
                                       Navigator.pushReplacementNamed(context, 'dashboard');
                                       //saveLocalData(); //TODO: un-comment on release version
                                     }
