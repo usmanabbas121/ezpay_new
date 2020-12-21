@@ -233,6 +233,77 @@ class _SignInState extends State<SignIn> {
                               ),
                               SizedBox(height: 15,),
 
+
+
+                              Container(
+                                height: 50,
+                                width: MediaQuery.of(context).size.width,
+                                child: RaisedButton(
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(10.0),
+                                      side: BorderSide(color: Theme.of(context).primaryColor)),
+                                  onPressed: () {
+
+                                  },
+                                  color: Theme.of(context).primaryColor,
+                                  textColor: Colors.white,
+                                  child:Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                          height:20,
+                                          width: 20,
+                                          child: SvgPicture.asset("assets/fbb.svg",color: Colors.white,)),
+                                      SizedBox(width: 10,),
+                                      Text(
+                                        'Login With Facebook',
+                                        style: TextStyle(
+                                            fontSize: 14.0,
+                                            fontFamily: "Proxmia",
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.w900),
+                                      ),
+                                    ],
+                                  )
+                                ),
+                              ),
+                              SizedBox(height: 15,),
+
+
+                              Container(
+                                height: 50,
+                                width: MediaQuery.of(context).size.width,
+                                child: RaisedButton(
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(10.0),
+                                      side: BorderSide(color: Theme.of(context).primaryColor)),
+                                  onPressed: () {
+
+                                  },
+                                  color: Theme.of(context).primaryColor,
+                                  textColor: Colors.white,
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                          height:20,
+                                          width: 20,
+                                          child: SvgPicture.asset("assets/google.svg",color: Colors.white,)),
+                                      SizedBox(width: 10,),
+                                      Text(
+                                        'Login With Google',
+                                        style: TextStyle(
+                                            fontSize: 14.0,
+                                            fontFamily: "Proxmia",
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.w900),
+                                      ),
+                                    ],
+                                  )
+                                ),
+                              ),
+                              SizedBox(height: 15,),
+
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [

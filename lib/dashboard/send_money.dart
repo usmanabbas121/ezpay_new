@@ -25,15 +25,22 @@ class _Send_MoneyState extends State<Send_Money> {
     super.initState();
   }
   void add(){
-    int current=int.parse(currency.text);
-    current=current+10;
+    double current=double.parse(currency.text);
+    current=current+1;
+    setState(() {
+      currency.text=current.toString();
+    });
+  }
+  void addbutton(double value){
+    double current=value;
+
     setState(() {
       currency.text=current.toString();
     });
   }
   void minus(){
-    int current=int.parse(currency.text);
-    current=current-10;
+    double current=double.parse(currency.text);
+    current=current-1;
     setState(() {
       currency.text=current.toString();
     });
@@ -134,10 +141,10 @@ class _Send_MoneyState extends State<Send_Money> {
                   padding: const EdgeInsets.only(left: 25,right: 25),
                   child: Row(
                     children: [
-                      Expanded(child: buttons("05"),flex: 1,),
+                      Expanded(child: buttons("5"),flex: 1,),
+                      Expanded(child: buttons("10"),flex: 1,),
                       Expanded(child: buttons("15"),flex: 1,),
-                      Expanded(child: buttons("75"),flex: 1,),
-                      Expanded(child: buttons("155"),flex: 1,),
+                      Expanded(child: buttons("20"),flex: 1,),
 
 
                     ],
@@ -148,10 +155,10 @@ class _Send_MoneyState extends State<Send_Money> {
                   padding: const EdgeInsets.only(left: 25,right: 25),
                   child: Row(
                     children: [
-                      Expanded(child: buttons("200"),flex: 1,),
-                      Expanded(child: buttons("500"),flex: 1,),
-                      Expanded(child: buttons("1000"),flex: 1,),
-                      Expanded(child: buttons("1500"),flex: 1,),
+                      Expanded(child: buttons("25"),flex: 1,),
+                      Expanded(child: buttons("30"),flex: 1,),
+                      Expanded(child: buttons("35"),flex: 1,),
+                      Expanded(child: buttons("40"),flex: 1,),
 
 
                     ],
@@ -586,21 +593,26 @@ class _Send_MoneyState extends State<Send_Money> {
   }
 
   Widget buttons(String amount){
-    return  Padding(
-      padding: const EdgeInsets.all(5.0),
-      child: Container(
-          height: 60,
-          decoration: BoxDecoration(
-            color: Theme.of(context).primaryColor.withOpacity(.15),
-            borderRadius: BorderRadius.all(Radius.circular(10)),
-          ),
-          child: Center(
-            child: Text("£ "+amount,style:TextStyle(
-                fontSize: 15.0,
-                fontFamily: "Proxmia",
-                color: Theme.of(context).primaryColor,
-                fontWeight: FontWeight.bold)),
-          )
+    return  InkWell(
+      onTap: (){
+        addbutton(double.parse(amount));
+      },
+      child: Padding(
+        padding: const EdgeInsets.all(5.0),
+        child: Container(
+            height: 60,
+            decoration: BoxDecoration(
+              color: Theme.of(context).primaryColor.withOpacity(.15),
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+            ),
+            child: Center(
+              child: Text("£ "+amount,style:TextStyle(
+                  fontSize: 15.0,
+                  fontFamily: "Proxmia",
+                  color: Theme.of(context).primaryColor,
+                  fontWeight: FontWeight.bold)),
+            )
+        ),
       ),
     );
   }

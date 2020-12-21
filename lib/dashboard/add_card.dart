@@ -1,11 +1,36 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:image_picker/image_picker.dart';
 class Creditcard extends StatefulWidget {
   @override
   _CreditcardState createState() => _CreditcardState();
 }
 
 class _CreditcardState extends State<Creditcard> {
+  final picker = ImagePicker();
+  TextEditingController name=new TextEditingController();
+  TextEditingController number=new TextEditingController();
+  TextEditingController month=new TextEditingController();
+  TextEditingController year=new TextEditingController();
+  TextEditingController cvvv=new TextEditingController();
+
+
+
+  Future getImage() async {
+    final pickedFile = await picker.getImage(source: ImageSource.camera);
+
+    setState(() {
+      if (pickedFile != null) {
+        name.text="Muhammad Ashir";
+        number.text="5160 6298 1400 2499";
+        month.text="09";
+        year.text="2024";
+        cvvv.text="921";
+      } else {
+        print('No image selected.');
+      }
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,6 +48,34 @@ class _CreditcardState extends State<Creditcard> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  SizedBox(height: 20,),
+                  Container(
+                    height: 120,
+                    width: MediaQuery.of(context).size.width,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      color: Theme.of(context).primaryColor,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        InkWell(
+
+                          child: Container(
+                              height:50,
+                              child: SvgPicture.asset("assets/scancard.svg",color: Colors.white,)),
+                        onTap: (){
+                          getImage();
+                        },),
+                        SizedBox(height: 10,),
+                        Text("Scan Card",style: TextStyle(
+                            fontSize: 15.0,
+                            fontFamily: "Proxmia",
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500),)
+                      ],
+                    )
+                  ),
                   SizedBox(height: 40,),
                   Text("Full Name",style: TextStyle(
                       fontSize: 13.0,
@@ -32,6 +85,7 @@ class _CreditcardState extends State<Creditcard> {
                           .withOpacity(.6),
                       fontWeight: FontWeight.w500),),
                   TextFormField(
+                    controller: name,
                     style: TextStyle(
                         fontSize: 15.0,
                         fontFamily: "Proxmia",
@@ -88,6 +142,7 @@ class _CreditcardState extends State<Creditcard> {
                           .withOpacity(.6),
                       fontWeight: FontWeight.w500),),
                   TextFormField(
+                    controller: number,
                     style: TextStyle(
                         fontSize: 15.0,
                         fontFamily: "Proxmia",
@@ -148,6 +203,7 @@ class _CreditcardState extends State<Creditcard> {
                                 .withOpacity(.6),
                             fontWeight: FontWeight.w500),),
                         TextFormField(
+                          controller: month,
                           style: TextStyle(
                               fontSize: 15.0,
                               fontFamily: "Proxmia",
@@ -206,6 +262,7 @@ class _CreditcardState extends State<Creditcard> {
                                 .withOpacity(.6),
                             fontWeight: FontWeight.w500),),
                         TextFormField(
+                          controller: year,
                           style: TextStyle(
                               fontSize: 15.0,
                               fontFamily: "Proxmia",
@@ -264,6 +321,7 @@ class _CreditcardState extends State<Creditcard> {
                                 .withOpacity(.6),
                             fontWeight: FontWeight.w500),),
                         TextFormField(
+                          controller: cvvv,
                           style: TextStyle(
                               fontSize: 15.0,
                               fontFamily: "Proxmia",
