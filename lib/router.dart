@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 
 import 'dashboard/add_card.dart';
 import 'dashboard/contact_list.dart';
+import 'dashboard/gift.dart';
 import 'dashboard/to_company.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
@@ -36,5 +37,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => Contactlist(currency));
     case 'tocompany':
       return MaterialPageRoute(builder: (context) => CompanyList(company_curr));
+    case 'shoppping':
+      return MaterialPageRoute(builder: (context) => merchant());
   }
 }

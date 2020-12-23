@@ -295,10 +295,15 @@ class _HomeState extends State<Home> {
                                     child: Column(
                                       children: [
 
-                                        Container(
-                                          width: 30,
-                                          height: 30,
-                                          child: SvgPicture.asset("assets/reward.svg",color: Colors.white,),
+                                        InkWell(
+                                          onTap: (){
+                                            Navigator.pushNamed(context, "shoppping");
+                                          },
+                                          child: Container(
+                                            width: 30,
+                                            height: 30,
+                                            child: SvgPicture.asset("assets/reward.svg",color: Colors.white,),
+                                          ),
                                         ),
                                         SizedBox(height: 04,),
                                         AutoSizeText(
